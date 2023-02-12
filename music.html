@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--All the images, video, music are my original works-->
+	<head>
+		<meta charset="utf-8">
+		<title>Final Project</title>
+
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<!-- Animate CSS -->
+		<!--<link rel="stylesheet" href="css/animate.css">-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+		<!-- google font -->
+		<link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Mitr:200,300,400,500&display=swap" rel="stylesheet">
+		<!--<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">-->
+		<!--<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">-->
+		<!--<link href="https://fonts.googleapis.com/css?family=Antic+Didone&display=swap" rel="stylesheet">-->
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Font Awesome - For use in I360 -->
+		<script src="https://kit.fontawesome.com/b250cede83.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!-- Video -->
+		<div class="fullscreen-bg">
+			<video class="fullscreen-bg__video"  autoplay >
+				<!-- I found this video from youtube https://www.youtube.com/watch?v=3eXycW1fZEI-->
+				<source src="images/bgh.mp4">
+			</video>
+		</div>
+		<!-- NAVIGATION -->
+		<nav id="mySidenav" class="sidenav">
+			<a class="closebtn">&times;</a>
+			<a href="index.html">About&nbsp;Me</a>
+			<a href="visual.html">Visual&nbsp;Design</a>
+			<a href="web.html">Web&nbsp;Design</a>
+			<a href="music.html">Music</a>
+			<a href="ui.html">Interaction&nbsp;Design</a>
+		</nav>
+		<!-- css animation -->
+		<h1 class="animated pulse">Music</h1>
+		<!-- Use any element to open the sidenav -->
+		<div class="openbtn">
+			<i class="fa-solid fa-bars fa-2x"></i>
+			<span class="menu-text">menu</span>
+		</div>
+
+		<!-- Video -->
+		<!--When I run it through the validator, it shows some errors, but my codes is copy from https://embedresponsively.com/. 
+			Erika Used this in the class, so I think it is correct codes  -->
+			
+		<article class="video1">
+			<div class="container">
+				<section>
+					<div class='embed-container'><iframe src='https://www.youtube.com/embed/JGqVdIJGpuk' frameborder='0' allowfullscreen></iframe></div>
+				</section>
+				<section>
+					<div class='embed-container'><iframe src='https://www.youtube.com/embed/EKGE4CnGpUE' frameborder='0' allowfullscreen></iframe></div>
+				</section>
+				<section>
+					<div class='embed-container'><iframe src='https://www.youtube.com/embed/lDHTjDuwVQA' frameborder='0' allowfullscreen></iframe></div>
+				</section>
+				<section>
+					<div class='embed-container'><iframe src='https://www.youtube.com/embed/_1_Ky_EAhf8' frameborder='0' allowfullscreen></iframe></div>
+				</section>
+				<section>
+					<div class='embed-container'><iframe src='https://www.youtube.com/embed/dP-Z5UpHM9U' frameborder='0' allowfullscreen></iframe></div>
+				</section>
+				<section>
+					<div class='embed-container'><iframe src='https://www.youtube.com/embed/FYEzolSUHrU' frameborder='0' allowfullscreen></iframe></div>
+				</section>
+			</div>
+		</article>
+
+		
+
+		<!-- Highlights -->
+		<article class="highlightm">
+			<h2 class="sr-only">Highlights</h2>
+			<div class="container">
+				<section>
+					<div class="icon"><i class="fa-solid fa-thought-bubble"></i></div>
+					<!-- All the information below from https://www.talentigelato.com/our-craft-->
+					<h2>Dream</h2>
+					<p> Dream is one of the three works I would like the Admissions Committee to review. My inspiration for this audio comes from one of my crazy dreams. The dream is not real, so this project allows me to try different audio elements that I don’t usually use. In the dream, I had a fantastic journey between reality and my imagination. I tried to use audio to portray the abstract images and crazy adventure.  </p>
+				</section>
+				<section>
+					<div class="icon"><i class="fa-solid fa-diagram-venn"></i></div>
+					<h2>Intense</h2>
+					<p>Intense is also one of the three works I would like the Admissions Committee to review.This piece describes an extreme emotion. The idea of this piece is from the movie Misery. In this movie, Annie was the “number one” fan of Paul who was a famous writer. Annie was crazy for Paul. She imprisoned Paul. Her love for Paul was sometimes gentle, sometimes intense, and sometimes horrific. I want to use this piece of music to express the spooky love that Annie had to Paul. </p>
+				</section>
+				<section> 
+					<div class="icon"><a href="http://html.sice.indiana.edu/~wl15/emotion/index.html" i class="fa-solid fa-tree fa-3x"></a href="web.html" i></div>
+					<h2>Emotion Tree</h2>
+					<p>Emotion tree is the last one of the three works I would like the Admissions Committee to review. After my research on human emotion. I learned that music is powerful to get emotional responses. I used this idea in the concept of my web design. The web page has six doors and each door represents an emotion. Users can experience the emotional expressions of the brain on each door. The purpose of this project was to provide users a better understanding of emotions. (This website need a little bit time to load the audio).  </p>
+				
+				</section>
+			</div>	
+		</article>
+		
+		
+		<!-- https://developers.google.com/speed/libraries/#jquery -->
+		<!-- JAVASCRIPT -->
+		<script src="js/nav.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(function() {
+
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--All the images, video, music are my original works-->
+	<head>
+		<meta charset="utf-8">
+		<title>Final Project</title>
+
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<!-- Animate CSS -->
+		<!--<link rel="stylesheet" href="css/animate.css">-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+		<!-- google font -->
+		<link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Mitr:200,300,400,500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+		<!-- Hover CSS -->
+		<link rel="stylesheet" href="plugins/hover/hover.css">
+
+		<!-- Swipebox Plugin CSS -->
+		<link rel="stylesheet" href="plugins/swipebox/css/swipebox.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Font Awesome - For use in I360 -->
+		<script src="https://kit.fontawesome.com/b250cede83.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!-- NAVIGATION -->
+		<nav id="mySidenav" class="sidenav">
+			<a class="closebtn">&times;</a>
+			<a href="index.html">About&nbsp;Me</a>
+			<a href="visual.html">Visual&nbsp;Design</a>
+			<a href="web.html">Web&nbsp;Design</a>
+			<a href="music.html">Music</a>
+			<a href="ui.html">Interaction&nbsp;Design</a>
+		</nav>
+		<!-- css animation -->
+		<h1 class="animated pulse">Visual Design</h1>
+		<!-- Use any element to open the sidenav -->
+		<!-- Use any element to open the sidenav -->
+		<div class="openbtn">
+			<i class="fa-solid fa-bars fa-2x"></i>
+			<span class="menu-text">menu</span>
+		</div>
+		
+        <!-- plugin -->
+		<main>
+			<div class="box">
+				<div class="photo">
+					<!-- Swipebox Plugin HTML -->
+
+					<!-- All photos by me -->
+					<!--The codes in here have some error in html validator, but it is from the lightbox in the materials, so I think that's ok-->
+					<a rel="gallery-1" href="images/adb.png" class="swipebox hvr-rotate" title="IU Auditorium, Sample Gate, Museum.">
+					<figure>
+						<img src="images/ad.png" alt="chocolate chip cookies">
+						<figcaption>IU Auditorium, Sample Gate, Museum.</figcaption>
+					</figure>
+					</a>
+
+					<a rel="gallery-1" href="images/logob.png" class="swipebox hvr-rotate" title="Name Logos.">
+						<figure>
+						    <img src="images/logo.png" alt="cupcakes">
+							<figcaption>Name logos made by Illustrator.</figcaption>
+						</figure>
+					</a>
+
+					<a rel="gallery-1" href="images/ps2b.png" class="swipebox hvr-rotate" title="A photo made by Photoshop.">
+						<figure>
+						    <img src="images/ps2.png" alt="cinnamon sugar donut">
+							<figcaption>A photo made by Photoshop.</figcaption>
+						</figure>
+					</a>
+
+					<a rel="gallery-1" href="images/zebra.png" class="swipebox hvr-rotate" title="A photo made by Illustrator.">
+						<figure>
+						    <img src="images/zebra.png" alt="pumpkin pie">
+							<figcaption>A photo made by Illustrator.</figcaption>
+						</figure>
+					</a>
+
+					<a rel="gallery-1" href="images/sbb.png" class="swipebox hvr-rotate" title="Illustration and Photography.">
+						<figure>
+						    <img src="images/sbb.png" alt="chocolate lava cake">
+							<figcaption>Pairing illustration and Photography.</figcaption>
+						</figure>
+					</a>
+
+					<a rel="gallery-1" href="images/mu.jpg" class="swipebox hvr-rotate" title="Making from Procrete.">
+						<figure>
+						    <img src="images/mus.png" alt="chocolate lava cake">
+							<figcaption>Making from Procrete.</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<section>
+					<h2 class="sr-only">Contact Information</h2>
+					<address>
+					<strong>INDIANA UNIVERSITY, BLOOMINGTON<br>(2017-2019)</strong><br>
+					<p>Major: Informatics<br>
+					Minor: Music<br>
+					Degree: Bachelor<br>
+					<br><br>
+					
+					(650) 245-5981
+					</p>
+				</address>
+				</section>
+
+				<section>
+						<h2 class="sr-only">Address</h2>
+						<address>
+						<strong>LUDDY SCHOOL OF INFORMATICS,</strong><br><br>
+						<p>Informatics, Computing, and Engineering <br>
+						Download:<a href="resume.docx" download style="color: #9A9A9A">Resume</a><br>
+						Email:<a href = "mailto:wl15@iu.edu?subject = Feedback&body = Message" style="color: #9A9A9A">
+							wl15@iu.edu
+							</a>
+							<br><br>
+						(628) 233-0611</p>
+					</address>
+					</section>
+
+				<section>
+					<h2 class="sr-only">Social Media</h2>
+					<!-- font awesome-->
+					<a href="https://www.youtube.com/channel/UCEOEdsCuFthGndaXWI-irEw?view_as=subscriber"><i class="fab fa-youtube fa-2x"></i></a>
+					<a href="https://soundcloud.com/weijia-liu-112139970"><i class="fab fa-soundcloud fa-2x"></i></a>
+					<a href="https://www.linkedin.com/in/weijia-liu-645a35174/"><i class="fab fa-linkedin fa-2x"></i></a>
+				</section>
+				
+			</div>
+		</footer>
+		
+
+		<!-- https://developers.google.com/speed/libraries/#jquery -->
+		<!-- JAVASCRIPT -->
+		<script src="js/nav.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="plugins/swipebox/lib/jquery-2.1.0.min.js"></script>
+		<script src="plugins/swipebox/js/jquery.swipebox.js"></script>
+		<script>
+			;( function( $ ) {
+
+				$( '.swipebox' ).swipebox();
+
+			} )( jQuery );
+		</script>
+       
+            
+	</body>
+</html>
