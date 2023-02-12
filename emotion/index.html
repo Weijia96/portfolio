@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>emotiontree</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+  <style>
+    body { margin: 0 auto;
+    background-image: url('../images/home.jpg');
+    background-size: cover;
+    }
+  </style>
+<body>
+<div class="image">
+
+	
+<img src="images/sad.png" class="saddoor" onMouseOver="PlaySound('sadness')" onMouseOut="StopSound('sadness')">
+<img src="images/surprise.png" class="surprise" onMouseOver="PlaySound('surprisem')" onMouseOut="StopSound('surprisem')">
+<img src="images/happy.png" class="happy" onMouseOver="PlaySound('happym')" onMouseOut="StopSound('happym')">
+<img src="images/fear.png" class="fear" onMouseOver="PlaySound('fearm')" onMouseOut="StopSound('fearm')">
+<img src="images/disgust.png" class="disgust" onMouseOver="PlaySound('disgustm')" onMouseOut="StopSound('disgustm')">
+<img src="images/angry.png" class="angry" onMouseOver="PlaySound('angrym')" onMouseOut="StopSound('angrym')">
+</div>
+
+<div class="audios">
+  <audio loop id="sadness">
+    <source src="audio/sadness.mp3" type="audio/mp3">
+  </audio>
+  <audio loop id="surprisem">
+    <source src="audio/surprise.mp3" type="audio/mp3">
+  </audio>
+  <audio loop id="happym">
+    <source src="audio/happy.mp3" type="audio/mp3">
+  </audio>
+  <audio loop id="fearm">
+    <source src="audio/fear.mp3" type="audio/mp3">
+  </audio>
+  <audio loop id="disgustm">
+    <source src="audio/disgust.mp3" type="audio/mp3">
+  </audio>
+  <audio loop id="angrym">
+    <source src="audio/angry.mp3" type="audio/mp3">
+  </audio>
+</div>
+<script>
+	
+function onClick(MyImage) {
+     	MyImage.src = "images/sad.png";}
+function onClick(MyImage) {
+     	MyImage.src = "images/surprise.png";}
+function onClick(MyImage) {
+     	MyImage.src = "images/happy.png";}
+function onClick(MyImage) {
+     	MyImage.src = "images/fear.png";}
+function onClick(MyImage) {
+     	MyImage.src = "images/disgust.png";}
+function onClick(MyImage) {
+     	MyImage.src = "images/angry.png";}
+function PlaySound(sound) {
+    	var thissound=document.getElementById(sound);
+    	thissound.play();}
+
+function StopSound(sound) {
+    	var thissound=document.getElementById(sound);
+    	thissound.pause();
+		thissound.currentTime = 0;}
+	
+</script>
+
+
+</body>
+</html>
