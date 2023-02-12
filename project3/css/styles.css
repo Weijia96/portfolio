@@ -1,0 +1,329 @@
+/* natural box model */
+/*Weijia Liu Project 3 css*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+  
+/* video */
+/* video from youtube https://www.youtube.com/watch?v=3eXycW1fZEI */
+.video {
+    position:fixed;
+    left:0;
+    top:0;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    z-index:-1;
+}
+
+/*
+    TYPOGRAPHY
+*/
+/* Google fonts*/
+ul, h1, h2, p {
+    font-family: 'Antic Didone', serif;
+}
+
+
+/* Navigation */
+nav {
+    height: 200px;
+    background-color: #0f0e0e;
+    margin-top: -1.3em;
+    margin-bottom: 5em;
+}
+
+/* flex box */
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  nav ul li {
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(124, 88, 10);
+  }
+ 
+/* Header and container*/
+
+header.theme {
+    margin: 0 auto;
+    max-width: 700px;
+}
+.theme .container {
+    max-width: 1050px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em 1em;
+}
+
+/* flex box*/
+header {
+    margin-left: 20em;
+    margin-right: 20em;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);;
+    border-radius: 20px;
+    
+}
+
+
+/* Gallery*/
+.gallery h2 {
+    color: #ffffff;
+}
+
+/*flex-box*/
+.gallery section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.gallery figure {
+    margin: 4em 0.5em;
+    padding: 15px 30px;
+    flex: 1 0 250px;
+}
+
+.gallery figure img {
+    border-radius: 20px;
+    height: 475px;
+    width: 316px;
+}
+
+.gallery img:hover {
+    opacity: 0.9;
+}
+
+/* Highlights */
+.highlights {
+    background-image: radial-gradient(circle at center, #31687e 0%, #6c9cc4 100%);
+    margin-left: 4em;
+    margin-right: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-top: 1.7em;
+}
+
+/*flex-box*/
+.highlights .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.highlights section {
+    background-color: rgba(221, 226, 233, 0.8);
+    padding: 15px 30px;
+    margin: 2.0em 15px 1.0em;
+    flex: 1 0 250px;
+    position: relative;
+}
+
+.highlights .icon {
+    position: absolute;
+    top: -25px;
+    left: 42%;
+    color: #d19524;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 6em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: black;
+  color: #ffffff;
+}
+
+/* flex box */
+footer .container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+footer address {
+font-style: normal;
+line-height: 1em;
+}
+
+footer section {
+margin: 0 auto;
+}
+
+footer, p {
+  line-height: 1.3em;
+}
+
+footer a {
+display: inline-block;
+margin: 0 16px 0.5em;
+}
+
+/* Rotate */
+.hvr-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+/* I found the codes for rotate from https://github.com/IanLunn/Hover/blob/master/css/hover.css, when I check through validator, it shows warning, 
+but this is the codes from github, I couldn't change*/
+
+/*
+    IMAGES
+*/
+img {
+    width: 100%;
+    display: block;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    /*position: relative;
+    top: 20px;
+    right: -390px;
+    z-index: -10; */
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* MEDIA QUERIES */
+/* X-Small devices (portait phones, less than 576px) */
+/* All styles up to this point in the stylesheet are for X-Small */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* body { background-color: orange; } */
+    #rwd { background-color: orange; }
+    /* HEADER */
+    h1 {
+      font-size: 24px;
+    }
+
+    header.theme {
+      margin: 0 auto;
+      max-width: 500px;
+    }
+    
+    
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #rwd { background-color: green; }
+    /* body { background-color: green; } */
+    /* HEADER */
+    
+    header.theme {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* body { background-color: blue; } */
+    /* HEADER */
+    #rwd { background-color: blue; }
+    h1 {
+      font-size: 36px;
+  }
+    header.theme {
+      margin: 0 auto;
+      max-width: 700px;
+    }
+  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* body { background-color: purple; } */
+    #rwd { background-color: purple; }
+    header.theme {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    
+}

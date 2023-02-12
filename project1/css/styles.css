@@ -1,0 +1,116 @@
+body {
+    height: 100%; 
+    margin: 0;
+    background-image: url('../images/brulee1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    color: #EAAE4B;
+    text-align: center;
+    font-family: Didot, serif;
+}
+
+h3 {
+    color: #EAAE4B;
+    font-family: Didot, serif;
+}
+
+.text {
+    margin: 7em;
+    padding: 6em;
+    background-color: #3d3d3d;
+    opacity: 0.95;
+    color: white;
+
+    
+}
+
+p {
+    font-family: Didot, serif;;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin-bottom: 3em;
+}
+
+a {
+    color: #FF8D00;
+    font-family: Didot, serif;
+}
+
+a:hover {
+    color: #EAAE4B;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+figure {
+    margin: 2.0em 0 2.5em;
+}
+
+figcaption {
+    font-size: 13px;
+    margin: 1.0em 1.0em 0;
+    line-height: 1.4em;
+    font-family: Helvetica, sans-serif;
+}
+
+.figure-left{
+    float: left;
+    width: 45%;
+    padding-right: 1.0em;  
+}
+
+.figure-right{
+    float: right;
+    width: 45%;
+}
+
+/*clearfix */
+.group::after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+#table {
+    border-collapse: collapse;
+    margin-bottom: 3em;
+}
+
+#table td, #table th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-family: sans-serif;
+    padding: 10px;
+    font-size: 11pt;
+    padding-left: 50px;
+}
+
+ul {
+    font-family: Didot, serif;;
+    font-size: 16px;
+    margin-bottom: 2em;
+}
+
+strong {
+    color: #EAAE4B;
+}
+
+li {
+    padding-bottom: 1.0em;
+}
+
+ol {
+    line-height: 1.4em;
+    font-family: Didot, serif;;
+    font-size: 16px;
+    margin-bottom: 3em;
+}

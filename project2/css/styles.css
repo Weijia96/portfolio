@@ -1,0 +1,92 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/* START YOUR STYLES HERE */
+body {
+  background: url('../images/bird.jpg') no-repeat center center fixed;
+  /* This picture is from https://unsplash.com/photos/bQxGg8Vx1Vc */
+  background-size: cover;
+} 
+
+.quotation {
+  width: 700px;
+  background-color: rgba(177, 146, 146, 0.3);
+  border-radius: 10% / 40%;
+  text-shadow: 1px 1px 2px rgb(255, 237, 237);
+  margin: 90px auto 500px;
+  padding: 1em 3em;
+  position: relative;
+}
+
+p {
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  color: rgb(33,57,26);
+  font-size: 30px;
+  padding-left: 45px;
+}
+
+.quote::before {
+  content: open-quote;
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  color: rgb(104, 104, 104);
+  position: absolute;
+  top: 20px;
+  left: 55px;
+}
+
+.quote::after {
+  content: close-quote;
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  color: rgb(104, 104, 104);
+  position: absolute;
+  top: 245px;
+  right: 160px;
+}
+
+.love {
+  color: rgb(104, 104, 104);
+  text-shadow: 1px 1px 2px rgb(255, 237, 237);
+}
+
+.singer {
+  text-align: right;
+  font-size: 25px;
+}
+
+.lucky {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 380px;
+  right: 600px;
+  z-index: -10;
+}
+
+

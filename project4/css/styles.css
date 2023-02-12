@@ -1,0 +1,363 @@
+/* apply a natural box layout model to all elements */
+/* Xinyi He Project 4 css */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* RWD tag to visually indicate media query breaks */
+#tag {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	background-color: #CC0000;
+}
+
+/* PAGE THEME COLORS - PLEASE USE */
+:root {
+    --menu-color: gold;
+    --iu-red: rgb(153, 0, 0);
+    --iu-grey: rgb(237, 235, 235);
+    --iu-black: rgb(69, 56, 43);
+}
+
+/* Extra small devices (phones, less than 768px) */
+
+/* 
+    GENERAL
+*/
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+/* 
+    TYPOGRAPHY
+*/
+h1, h2, h3, h4, h5, h6, p, li, a, td, figcaption {
+    font-family: 'PT Sans', sans-serif;
+    padding-left: 20px;
+    line-height: 1.2em;
+    margin-top: 2em;
+    /* also adjust margin and line-height */
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-weight: lighter;
+    /* also adjust padding and font weight */
+    /* adjust H1 size in the media queries */
+}
+
+h1 span {
+    
+    /* adjust font weight */
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 700;
+    
+
+}
+
+h3 {
+    letter-spacing: 2px;
+    font-weight: 700;
+
+}
+
+p {
+    font-size: 14px;
+}
+
+/*
+    HEADER
+*/
+header h1, .container {
+    /* should stretch up to 800px wide and center on the screen */
+    max-width: 800px;
+   
+
+}
+
+header {
+    background-color: #7D110C;
+    color: white;
+}
+
+/*
+    MAP
+*/
+#mapid { 
+    /* adjust map height in the media queries  */
+    height: 180px; 
+}
+
+/* Main */
+.racing-stripes {
+    /* https://css-tricks.com/stripes-css/ */
+    height: 34px;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      #CDC7C9 10px,
+      #CDC7C9 20px
+    ),
+    linear-gradient(
+      to bottom,
+      white,
+      #CDC7C9
+    )
+}
+
+
+
+
+article {
+
+    /* add padding */
+}
+
+/* Add additional page styles here */
+
+
+/* Navigation */
+.openbtn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+}
+.openbtn:hover {
+    color: grey;
+}
+.menu-text {
+    font-size: 11px;
+    display: block;
+}
+
+/* The side navigation menu */
+.all-over-bkg {
+    display: none;
+}
+
+.is-visible {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    display: block;
+}
+
+#mySidenav {
+    z-index: 10000;
+    
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #382a1c;  
+}
+  
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+/* Nav bar color */
+.fas, .menu-text {
+    color: white;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: grey;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+
+main {
+    transition: margin-left .5s;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.title {
+    background-color: #EDEBEC;
+    padding: 20px;
+    padding-left: 1px;
+}
+
+.highlight h3 {
+    padding-left: 5px;
+}
+
+.highlight p {
+    padding-left: 5px;
+}
+
+.but {
+    display: flex;
+    flex-flow: wrap;
+    padding-left: 20px;
+}
+
+.buttom {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.challenges-img {
+    width: 300px;
+    height: 300px;
+    padding-left: 20px;
+}
+
+.post {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 400px; 
+}
+
+.post p {
+    max-width: 400px;
+    display: block;
+    margin-left: 30px;
+}
+
+.post a {
+    width: 58%;
+    margin-left: 40px;
+}
+
+
+footer {
+    padding: 2.0em;
+    /* set background color and use margin to push it down from the rest of the content */
+}
+
+/*
+    BUTTONS AND LINKS
+*/
+.button {
+    background-color: var(--iu-red);
+    border: 3px solid var(--iu-red);
+    border-radius: 20px;
+    color: white;
+    padding: 0.5em 1.0em;
+    margin: 1.0em 2.0em 0 0;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: background-color .2s ease-out,color .2s ease-out,border-color .18s ease-out;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--iu-red);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*
+    map
+*/
+#mapid { height: 180px; }
+
+/*
+    MEDIA QUERIES
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* body { background-color: orange; } */
+    #tag { background-color: #F72020; }
+    h1 { font-size: 24px;}
+    #mapid { height: 180px;}
+    .racing-stripes { height: 40px;}
+    .post p {
+        margin-left: 10px;
+    }
+    
+    .post a {
+       
+        margin-left: 20px;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    #tag { background-color: #FF9900; }
+    h1 { font-size: 36px;}
+    #mapid { height: 240px;}
+    
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    #tag { background-color: #00AA88; }
+    h1 { font-size: 42px;}
+    #mapid { height: 360px;}
+    .racing-stripes { height: 60px;}
+    
+  
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    #tag { background-color: #674EA7; }
+    #mapid { height: 480px; }
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
